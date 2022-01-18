@@ -674,8 +674,15 @@ address {
     display: inline-block;
     width: 18px;
     height: 18px;
-    background-position: 50% 50%;
+    background-position: 50% 50%; 
     background-image: url(../images/close-black.svg);
+    fill: var(--text-color);
+
+}
+
+.modal-close:hover::after,
+.modal-close:focus::after {
+    fill: var(--brand-color);
 }
 
 /* .modal-close > .modal-close-icon {
