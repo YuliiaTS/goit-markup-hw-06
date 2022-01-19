@@ -672,7 +672,7 @@ address {
 }
 
 .modal-close-icon {
-    fill: inherit;
+    fill: currentColor;
 }
 
 .modal-close:hover,
