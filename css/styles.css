@@ -668,6 +668,16 @@ address {
     position: absolute;
     top: 8px;
     right: 8px;
+    color: var(--text-color);
+}
+
+.modal-close-icon {
+    fill: inherit;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+    color: var(--brand-color);
 }
 
 /* .modal-close::after {
@@ -680,7 +690,7 @@ address {
     fill: var(--text-color);
 } */
 
-.modal-close > .modal-close-icon {
+/* .modal-close > .modal-close-icon {
     width: 18px;
     height: 18px;
     background-image: url(../images/close-black.svg);
@@ -689,13 +699,81 @@ address {
     fill: var(--text-color);
 } 
 
-.modal-close-icon:hover,
-.modal-close-icon:focus {
+.modal-close:hover .modal-close-icon,
+.modal-close:focus .modal-close-icon {
     fill: var(--brand-color);
-}
+} */
 
 .is-hidden {
     opacity: 0.5;
     pointer-events: none;
     visibility: hidden;
 } 
+
+.modal-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+    margin-bottom: 12px;
+}
+
+.form-field {
+    margin-bottom: 10px;
+}
+
+.form-label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: #757575;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.form-input, .form-input-coment {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 12px 16px;
+}
+
+.form-input-coment {
+    height: 120px;
+    margin-bottom: 20px;
+    resize: none;
+}
+
+.form-input-coment::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.form-input::placeholder {
+    color: var(--text-color);
+}
+
+.submit-btn {
+    background-color: var(--brand-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: var(--accent-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    text-align: center;
+    display: block;
+    margin: 30px auto 40px;
+    min-width: 200px;
+    padding: 10px 55px;
+    transition: background-color 250ms var(--timing-function);
+}
+
+.submit-btn:hover,
+.submit-btn:focus {
+    background-color: #188CE8;
+}
