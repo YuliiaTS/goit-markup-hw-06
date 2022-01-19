@@ -669,6 +669,7 @@ address {
     top: 8px;
     right: 8px;
     color: var(--text-color);
+    transition: color 250ms var(--timing-function);
 }
 
 .modal-close-icon {
@@ -679,30 +680,6 @@ address {
 .modal-close:focus {
     color: var(--brand-color);
 }
-
-/* .modal-close::after {
-    content: "";
-    display: inline-block;
-    width: 18px;
-    height: 18px;
-    background-position: 50% 50%; 
-    background-image: url(../images/close-black.svg);
-    fill: var(--text-color);
-} */
-
-/* .modal-close > .modal-close-icon {
-    width: 18px;
-    height: 18px;
-    background-image: url(../images/close-black.svg);
-    background-size: contain;
-    background-position: 50% 50%;
-    fill: var(--text-color);
-} 
-
-.modal-close:hover .modal-close-icon,
-.modal-close:focus .modal-close-icon {
-    fill: var(--brand-color);
-} */
 
 .is-hidden {
     opacity: 0.5;
