@@ -677,17 +677,23 @@ address {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
-    /* text-align: center; */
+    text-align: center;
     display: block;
     min-width: 200px;
     height: 50px;
     padding: 10px 29px;
+    transition: background-color 250ms var(--timing-function);
+}
+
+.signup-btn:hover,
+.signup-btn:focus {
+    background-color: #188CE8;
 }
 
 .signup-icon {
     fill: var(--accent-color);
     position: absolute;
-    left: 10px;
+    left: 148px;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -833,7 +839,12 @@ address {
 
 .person-icon, .tel-icon, .email-icon {
     position: absolute;
-    left: 12px;
+    left: 15px;
+    right: 15px;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.policy-icon {
+    fill: transparent;
 }
