@@ -636,6 +636,7 @@ address {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
 }
 
 .signup-input {
@@ -646,7 +647,6 @@ address {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     background-color: transparent;
     padding: 15px 16px;
-    margin-top: 20px;
     margin-right: 12px;
     transition: border 250ms var(--timing-function);
 }
@@ -664,6 +664,10 @@ address {
     color: rgba(255, 255, 255, 0.6);
 }
 
+.signup-wrap {
+    position: relative;
+}
+
 .signup-btn {
     background-color: var(--brand-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -673,12 +677,19 @@ address {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
-    text-align: center;
+    /* text-align: center; */
     display: block;
     min-width: 200px;
     height: 50px;
     padding: 10px 29px;
-    margin-top: 20px;
+}
+
+.signup-icon {
+    fill: var(--accent-color);
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .backdrop {
@@ -806,4 +817,23 @@ address {
 .submit-btn:hover,
 .submit-btn:focus {
     background-color: #188CE8;
+}
+
+.check-text {
+    font-weight: 400;
+    font-size: 1.7;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+.user-name-wrap, .user-tel-wrap, .user-email-wrap {
+    position: relative;
+}
+
+.person-icon, .tel-icon, .email-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
 }

@@ -380,7 +380,12 @@
                 <form action="#" name="signup_form">
                     <div class="signup-thumb">
                         <input type="text" name="user-email-footer" class="signup-input" placeholder="E-mail" required />
-                        <button type="submit" class="signup-btn">Подписаться</button>
+                        <div class="signup-wrap">
+                            <button type="submit" class="signup-btn">Подписаться</button>
+                            <svg class="signup-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-send-ft"></use>
+                            </svg>
+                        </div>
                     </div>
                 </form>
             </div>
@@ -397,26 +402,51 @@
             <form action="#" name="call-back_form">
                 <div class="form-field">
                     <label for="user-name" class="form-label">Имя</label>
-                    <input
-                        type="text"
-                        name="user-name"
-                        class="form-input"
-                        placeholder=""
-                        id="user-name"
-                        required
-                    />
+                    <div class="user-name-wrap">
+                        <input
+                            type="text"
+                            name="user-name"
+                            class="form-input"
+                            placeholder=""
+                            id="user-name"
+                            required
+                        />
+                        <svg class="person-icon" width="18" height="18">
+                            <use href="./images/icons.svg#person-modal"></use>
+                        </svg>
+                    </div>
                 </div>
                 <div class="form-field">
-                <label for="user-tel" class="form-label">Телефон</label>
-                    <input type="tel" name="user-tel" class="form-input" placeholder="" id="user-tel" required />
+                    <label for="user-tel" class="form-label">Телефон</label>
+                    <div class="user-tel-wrap">
+                        <input type="tel" name="user-tel" class="form-input" placeholder="" id="user-tel" required />
+                        <svg class="tel-icon" width="18" height="18">
+                            <use href="./images/icons.svg#phone-modal"></use>
+                        </svg>
+                    </div>
                 </div>
                 <div class="form-field">
-                <label for="user-email" class="form-label">Почта</label>
-                    <input type="email" name="user-email" class="form-input" placeholder="" id="user-email" />
+                    <label for="user-email" class="form-label">Почта</label>
+                    <div class="user-email-wrap">
+                        <input type="email" name="user-email" class="form-input" placeholder="" id="user-email" />
+                        <svg class="email-icon" width="18" height="18">
+                            <use href="./images/icons.svg#email-modal"></use>
+                        </svg>
+                    </div>
                 </div>
                 <div class="form-field">
                 <label for="user-coment" class="form-label">Комментарий</label>
                     <textarea name="user-coment" id="user-coment" class="form-input-coment" placeholder="Введите текст"></textarea>
+                </div>
+                <div class="form-field">
+                    <input type="checkbox" name="policy" id="policy" class="policy-check visually-hidden" />
+                    <label for="policy" class="check-text">
+                        <span>
+                            <svg class="policy-icon" width="16" height="15">
+                                <use href="./images/icons.svg#icon-check"></use>
+                            </svg>
+                        </span>
+                        Соглашаюсь с рассылкой и принимаю <span class="license">Условия договора</span></label>
                 </div>
                 <button type="submit" class="submit-btn">Отправить</button>
             </form>
