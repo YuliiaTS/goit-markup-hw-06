@@ -678,7 +678,7 @@ address {
     line-height: 1.88;
     letter-spacing: 0.06em;
     text-align: center;
-    display: block;
+    display: inline-flex;
     min-width: 200px;
     height: 50px;
     padding: 10px 29px;
@@ -692,8 +692,9 @@ address {
 
 .signup-icon {
     fill: var(--accent-color);
+    margin-left: 10px;
     position: absolute;
-    left: 148px;
+    right: 29px;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -833,16 +834,16 @@ address {
     color: #757575;
 }
 
-.user-name-wrap, .user-tel-wrap, .user-email-wrap {
+.form-wrap {
     position: relative;
 }
 
-.person-icon, .tel-icon, .email-icon {
+.form-icon {
     position: absolute;
     left: 15px;
-    right: 15px;
     top: 50%;
     transform: translateY(-50%);
+    margin-right: 15px;
 }
 
 .policy-icon {
