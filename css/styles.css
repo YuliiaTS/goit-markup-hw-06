@@ -785,6 +785,11 @@ address {
 .form-input, .form-input-coment {
     width: 100%;
     height: 40px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
 }
@@ -806,6 +811,14 @@ address {
 
 .form-input::placeholder {
     color: var(--text-color);
+}
+
+/* .form-input::placeholder, .form-input-coment::placeholder {
+    text-transform: uppercase;
+} */
+
+.form-input:focus, .form-input-coment:focus {
+    border-color: #2196F3;
 }
 
 .submit-btn {
