@@ -773,6 +773,10 @@ address {
     margin-bottom: 10px;
 }
 
+.form-checkbox {
+    margin: 20px auto 40px;
+}
+
 .form-label {
     font-weight: 400;
     font-size: 12px;
@@ -862,6 +866,7 @@ address {
     letter-spacing: 0.03em;
     color: #757575;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -874,6 +879,12 @@ address {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.modal-link {
+    text-decoration: underline;
+    color: var(--brand-color);
+    margin-left: 3px;
 }
 
 .policy-icon {
