@@ -882,9 +882,12 @@ address {
 }
 
 .modal-link {
-    text-decoration: underline;
     color: var(--brand-color);
     margin-left: 3px;
+}
+
+.modal-link p {
+    text-decoration: underline;
 }
 
 .policy-icon {
